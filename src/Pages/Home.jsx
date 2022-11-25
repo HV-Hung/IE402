@@ -10,6 +10,8 @@ import dinhDocLapImg6 from "../asset/images/dinhdoclap6.png";
 import dinhDocLapImg7 from "../asset/images/dinhdoclap7.png";
 import dinhDocLapImg8 from "../asset/images/dinhdoclap8.png";
 import dinhDocLapImg9 from "../asset/images/dinhdoclap9.png";
+import dinhDocLapImg16 from "../asset/images/dinhdoclap16.jpg";
+import dinhDocLapImg17 from "../asset/images/dinhdoclap17.jpg";
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
 export const Home = () => {
@@ -18,47 +20,64 @@ export const Home = () => {
   return (
     <Layout>
       <div className="p-0 m-0">
-        <div className="relative mt-5">
+        <div className="relative mt-5 overflow-hidden">
           <Carousel
             ref={(ref) => {
               slider.current = ref;
             }}
             autoplay
+            className="h-[730px]"
           >
-            <div>
-              <img src={dinhDocLapImg} alt="dinhDocLapImg2" />
+            <div className="bg-black relative">
+              <img
+                className="w-full h-full object-cover object-center opacity-50"
+                src={dinhDocLapImg16}
+                alt="dinhDocLapImg2"
+              />
+              <div className="w-[830px] text-center absolute right-0 left-0 m-auto top-[250px]">
+                <h1 className="text-[#158E89] text-[48px] font-bold">
+                  DINH ĐỘC LẬP
+                </h1>
+                <p className="text-[28px] font-bold text-white troke">
+                  Dinh Độc Lập hay Hội trường Thống Nhất (tên gọi trước đây là
+                  dinh Norodom) là một công trình kiến trúc, tòa nhà ở Thành phố
+                  Hồ Chí Minh. Đây từng là nơi ở và làm việc của Tổng thống Việt
+                  Nam Cộng hòa. Hiện nay, dinh đã được Chính phủ Việt Nam xếp
+                  hạng là di tích quốc gia đặc biệt.
+                </p>
+              </div>
             </div>
             <div>
-              <img src={dinhDocLapImg} alt="dinhDocLapImg2" />
+              <img
+                className="w-full h-full object-cover object-center"
+                src={dinhDocLapImg2}
+                alt="dinhDocLapImg2"
+              />
             </div>
             <div>
-              <img src={dinhDocLapImg} alt="dinhDocLapImg2" />
+              <img
+                className="w-full h-full object-cover object-center"
+                src={dinhDocLapImg17}
+                alt="dinhDocLapImg2"
+              />
             </div>
             <div>
-              <img src={dinhDocLapImg} alt="dinhDocLapImg2" />
+              <img
+                className="w-full h-full object-cover object-center"
+                src={dinhDocLapImg}
+                alt="dinhDocLapImg2"
+              />
             </div>
           </Carousel>
 
           <LeftOutlined
-            className="absolute top-[50%] text-[30px] left-[20px]"
+            className="absolute top-[450px] text-white text-[30px] left-[20px]"
             onClick={() => slider.current.prev()}
           />
           <RightOutlined
-            className="absolute top-[50%] text-[30px] right-[20px]"
+            className="absolute top-[450px] text-white text-[30px] right-[20px]"
             onClick={() => slider.current.next()}
           />
-          <div className="w-[830px] text-center absolute right-0 left-0 m-auto bottom-[200px]">
-            <h1 className="text-[#158E89] text-[48px] font-bold">
-              DINH ĐỘC LẬP
-            </h1>
-            <p className="text-[16px] font-bold text-white troke">
-              Dinh Độc Lập hay Hội trường Thống Nhất (tên gọi trước đây là dinh
-              Norodom) là một công trình kiến trúc, tòa nhà ở Thành phố Hồ Chí
-              Minh. Đây từng là nơi ở và làm việc của Tổng thống Việt Nam Cộng
-              hòa. Hiện nay, dinh đã được Chính phủ Việt Nam xếp hạng là di tích
-              quốc gia đặc biệt.
-            </p>
-          </div>
         </div>
 
         <div className="h-[302px] my-10 mx-[50px] flex flex-wrap justify-center">
@@ -87,7 +106,9 @@ export const Home = () => {
             alt="dinhDocLapImg2"
           />
           <div className="w-[830px]">
-            <h1 className="text-[#158E89] text-[48px] font-bold">THAM QUAN</h1>
+            <h1 className="text-[#158E89] mt-10 text-[48px] font-bold">
+              THAM QUAN
+            </h1>
             <p className="text-[16px]">
               Dinh được kiến trúc sư Ngô Viết Thụ thiết kế xây dựng trên diện
               tích 4.500 m², diện tích sử dụng 20.000 m², gồm 3 tầng chính, 2
@@ -133,8 +154,8 @@ export const Home = () => {
               />
             </Col>
           </Row>
-          <div className="w-[830px]">
-            <h1 className="text-[#158E89] text-[48px] font-bold">
+          <div className="w-[830px] m-10">
+            <h1 className="text-[#158E89] mt-10 text-[48px] font-bold">
               MỘT SỐ HOẠT ĐỘNG
             </h1>
             <p className="text-[16px]">
