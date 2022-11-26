@@ -77,7 +77,7 @@ export const Header = () => {
         zIndex: "10",
       }}
     >
-      <div className="flex items-center w-full  justify-between mt-3">
+      <div className="flex items-center w-full h-full  justify-between">
         <Menu
           style={{
             backgroundColor: "#D1D6C2",
@@ -93,7 +93,7 @@ export const Header = () => {
         <div>
           {email ? (
             <Dropdown overlay={ProfileMenu}>
-              <h3 className="items-center space-x-1 text-black text-[20px] cursor-pointer">
+              <h3 className="items-center space-x-1 text-black text-[20px] cursor-pointer min-w-[224px]">
                 <Avatar
                   size={48}
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1920px-Flag_of_Vietnam.svg.png"

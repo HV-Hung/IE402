@@ -61,6 +61,7 @@ export const LienHe = () => {
               <textarea
                 className="w-[556px] h-[256px] rounded border border-[#CED0C2] p-2"
                 placeholder="Vui lòng nhập nội dung..."
+                required
               />
             </div>
             <button

@@ -1,7 +1,8 @@
 import { Carousel, Row, Col } from "antd";
 import React from "react";
 import { Layout } from "../Layout/Layout";
-import dinhDocLapImg from "../asset/images/dinhdoclap1.png";
+import dinhDocLapImg18 from "../asset/images/dinhdoclap18.webp";
+import dinhDocLapImg19 from "../asset/images/dinhdoclap19.webp";
 import dinhDocLapImg2 from "../asset/images/dinhdoclap2.png";
 import dinhDocLapImg3 from "../asset/images/dinhdoclap3.png";
 import dinhDocLapImg4 from "../asset/images/dinhdoclap4.png";
@@ -26,11 +27,11 @@ export const Home = () => {
               slider.current = ref;
             }}
             autoplay
-            className="h-[730px]"
+            className="h-screen w-screen"
           >
             <div className="bg-black relative">
               <img
-                className="w-full h-full object-cover object-center opacity-50"
+                className="w-full h-full object-cover object-center opacity-75"
                 src={dinhDocLapImg16}
                 alt="dinhDocLapImg2"
               />
@@ -50,7 +51,7 @@ export const Home = () => {
             <div>
               <img
                 className="w-full h-full object-cover object-center"
-                src={dinhDocLapImg2}
+                src={dinhDocLapImg19}
                 alt="dinhDocLapImg2"
               />
             </div>
@@ -64,20 +65,23 @@ export const Home = () => {
             <div>
               <img
                 className="w-full h-full object-cover object-center"
-                src={dinhDocLapImg}
+                src={dinhDocLapImg18}
                 alt="dinhDocLapImg2"
               />
             </div>
           </Carousel>
-
-          <LeftOutlined
-            className="absolute top-[450px] text-white text-[30px] left-[20px]"
-            onClick={() => slider.current.prev()}
-          />
-          <RightOutlined
-            className="absolute top-[450px] text-white text-[30px] right-[20px]"
-            onClick={() => slider.current.next()}
-          />
+          <div className="absolute top-[50%] left-[20px] w-[40px] h-[40px] rounded-full bg-white shadow-sm flex justify-center items-center">
+            <LeftOutlined
+              className="text-[20px]"
+              onClick={() => slider.current.prev()}
+            />
+          </div>
+          <div className="absolute top-[50%] right-[20px] w-[40px] h-[40px] rounded-full bg-white shadow-sm flex justify-center items-center">
+            <RightOutlined
+              className="text-[20px]"
+              onClick={() => slider.current.next()}
+            />
+          </div>
         </div>
 
         <div className="h-[302px] my-10 mx-[50px] flex flex-wrap justify-center">
