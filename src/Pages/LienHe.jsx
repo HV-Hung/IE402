@@ -16,7 +16,7 @@ export const LienHe = () => {
             document.lienhe.reset();
             notification["success"]({ message: "Liên hệ thành công!" });
           }}
-          className="z-50 "
+          className="z-50 mt-[100px]"
         >
           <Space
             direction="vertical"
@@ -59,7 +59,7 @@ export const LienHe = () => {
             <div>
               <p className="text-[18px]">Nội dung</p>
               <textarea
-                className="w-[556px] h-[256px] rounded border border-[#CED0C2] p-2"
+                className="w-[556px]  rounded border border-[#CED0C2] p-2"
                 placeholder="Vui lòng nhập nội dung..."
                 required
               />

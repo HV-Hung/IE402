@@ -7,7 +7,7 @@ import { Button } from "antd";
 export const BanDo = () => {
   return (
     <Layout>
-      <div className="p-0 m-0">
+      <div className="p-0 mt-[72px]">
         <div className="relative mt-5">
           <img
             className="w-full h-full object-cover"

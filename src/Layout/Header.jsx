@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Menu, Avatar, Dropdown } from "antd";
+import { Layout, Menu, Avatar, Dropdown, Space, Button } from "antd";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 
 export const Header = () => {
@@ -11,9 +11,11 @@ export const Header = () => {
       label: (
         <Link
           to={"/"}
-          className="items-center space-x-1 text-black font-bold text-[20px]"
+          className={`items-center  text-white text-[24px] ${
+            keyMenu === "" ? " font-bold" : " font-medium"
+          }`}
         >
-          TRANG CHỦ
+          Trang chủ
         </Link>
       ),
       key: "",
@@ -22,9 +24,11 @@ export const Header = () => {
       label: (
         <Link
           to={"/bando"}
-          className="items-center space-x-1 text-black font-bold text-[20px]"
+          className={`items-center  text-white text-[24px] ${
+            keyMenu === "bando" ? " font-bold" : " font-medium"
+          }`}
         >
-          BẢN ĐỒ 3D
+          Bản đồ 3D
         </Link>
       ),
       key: "bando",
@@ -32,24 +36,28 @@ export const Header = () => {
     {
       label: (
         <Link
-          to={"/thamquan"}
-          className="items-center space-x-1 text-black font-bold text-[20px]"
+          to={"/lienhe"}
+          className={`items-center  text-white text-[24px] ${
+            keyMenu === "lienhe" ? " font-bold" : " font-medium"
+          }`}
         >
-          THAM QUAN
+          Liên hệ
         </Link>
       ),
-      key: "thamquan",
+      key: "lienhe",
     },
     {
       label: (
         <Link
-          to={"/lienhe"}
-          className="items-center space-x-1 text-black font-bold text-[20px]"
+          to={"/thamquan"}
+          className={`items-center  text-white text-[24px] ${
+            keyMenu === "thamquan" ? " font-bold" : " font-medium"
+          }`}
         >
-          LIÊN HỆ
+          Tham quan
         </Link>
       ),
-      key: "lienhe",
+      key: "thamquan",
     },
   ];
   const email = localStorage.getItem("email");
@@ -71,29 +79,36 @@ export const Header = () => {
   return (
     <Layout.Header
       style={{
-        backgroundColor: "#D1D6C2",
+        backgroundColor: keyMenu === "" ? "transparent" : "black",
+        position: "absolute",
         height: "77px",
         color: "black",
         zIndex: "10",
+        width: "100vw",
       }}
     >
       <div className="flex items-center w-full h-full  justify-between">
-        <Menu
-          style={{
-            backgroundColor: "#D1D6C2",
-            color: "black",
-            marginRight: "50px",
-            border: "none",
-            width: "75%",
-          }}
-          selectedKeys={[keyMenu]}
-          mode="horizontal"
-          items={items}
-        />
+        <Link to={"/"}>
+          <div className="text-[32px] font-playfair text-white font-bold">
+            Dinh Độc Lập
+          </div>
+        </Link>
+        <Space align="center" size={30}>
+          {items.map((item) => {
+            return (
+              <div
+                className={`${keyMenu === item.key ? "border-b-[4px]" : ""}`}
+              >
+                {" "}
+                {item.label}
+              </div>
+            );
+          })}
+        </Space>
         <div>
           {email ? (
             <Dropdown overlay={ProfileMenu}>
-              <h3 className="items-center space-x-1 text-black text-[20px] cursor-pointer min-w-[224px]">
+              <h3 className="items-center space-x-1 text-white font-bold text-[20px] cursor-pointer min-w-[224px]">
                 <Avatar
                   size={48}
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1920px-Flag_of_Vietnam.svg.png"
@@ -103,10 +118,15 @@ export const Header = () => {
             </Dropdown>
           ) : (
             <Link
-              to={"/dangky"}
-              className="items-center space-x-1 text-black font-bold text-[20px] cursor-pointer"
+              to={"/dangnhap"}
+              className="items-center space-x-1 text-Whtie font-bold text-[20px] cursor-pointer"
             >
-              ĐĂNG KÝ
+              <Button
+                type="primary"
+                className="bg-[#1063B8] text-[24px] h-full px-5 rounded"
+              >
+                Đăng nhập
+              </Button>
             </Link>
           )}
         </div>
