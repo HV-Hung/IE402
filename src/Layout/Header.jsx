@@ -11,7 +11,7 @@ export const Header = () => {
       label: (
         <Link
           to={"/"}
-          className={`items-center  text-white text-[24px] ${
+          className={`items-center  text-white text-[20px] ${
             keyMenu === "" ? " font-bold" : " font-medium"
           }`}
         >
@@ -24,7 +24,7 @@ export const Header = () => {
       label: (
         <Link
           to={"/bando"}
-          className={`items-center  text-white text-[24px] ${
+          className={`items-center  text-white text-[20px] ${
             keyMenu === "bando" ? " font-bold" : " font-medium"
           }`}
         >
@@ -37,7 +37,7 @@ export const Header = () => {
       label: (
         <Link
           to={"/lienhe"}
-          className={`items-center  text-white text-[24px] ${
+          className={`items-center  text-white text-[20px] ${
             keyMenu === "lienhe" ? " font-bold" : " font-medium"
           }`}
         >
@@ -50,7 +50,7 @@ export const Header = () => {
       label: (
         <Link
           to={"/thamquan"}
-          className={`items-center  text-white text-[24px] ${
+          className={`items-center  text-white text-[20px] ${
             keyMenu === "thamquan" ? " font-bold" : " font-medium"
           }`}
         >
@@ -81,7 +81,7 @@ export const Header = () => {
       style={{
         backgroundColor: keyMenu === "" ? "transparent" : "rgba(0, 0, 0, 0.7)",
         position: "absolute",
-        height: "77px",
+        height: "55px",
         color: "black",
         zIndex: "10",
         width: "100vw",
@@ -123,7 +123,7 @@ export const Header = () => {
             >
               <Button
                 type="primary"
-                className="bg-[#1063B8] text-[24px] h-full px-5 rounded"
+                className="bg-[#1063B8] text-[20px] h-10  px-3 rounded"
               >
                 Đăng nhập
               </Button>

@@ -127,7 +127,7 @@ export const Home = () => {
           <div className="w-screen m-10">
             <Button
               type="primary"
-              className="bg-[#1063B8] text-[24px] px-5 rounded h-12"
+              className="bg-[#1063B8] text-[16px] px-3 rounded h-8"
             >
               Xem thêm
             </Button>
