@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/IE402/static/css/main.e8c04971.css",
-    "main.js": "/IE402/static/js/main.41cf0be3.js",
+    "main.css": "/IE402/static/css/main.99c3b4ee.css",
+    "main.js": "/IE402/static/js/main.d7246de2.js",
     "static/media/dinhdoclap90.png": "/IE402/static/media/dinhdoclap90.7d3382de837fb986af21.png",
     "static/media/dinhdoclap99.png": "/IE402/static/media/dinhdoclap99.d8c2e292ebe993db042d.png",
     "static/media/footer.png": "/IE402/static/media/footer.1607522991ba7da830d4.png",
@@ -25,11 +25,11 @@
     "static/media/dinhdoclap17.jpg": "/IE402/static/media/dinhdoclap17.4bf176e5a06b4690be36.jpg",
     "static/media/lienhe.png": "/IE402/static/media/lienhe.5f08a5a0b0659db087dc.png",
     "index.html": "/IE402/index.html",
-    "main.e8c04971.css.map": "/IE402/static/css/main.e8c04971.css.map",
-    "main.41cf0be3.js.map": "/IE402/static/js/main.41cf0be3.js.map"
+    "main.99c3b4ee.css.map": "/IE402/static/css/main.99c3b4ee.css.map",
+    "main.d7246de2.js.map": "/IE402/static/js/main.d7246de2.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8c04971.css",
-    "static/js/main.41cf0be3.js"
+    "static/css/main.99c3b4ee.css",
+    "static/js/main.d7246de2.js"
   ]
 }
