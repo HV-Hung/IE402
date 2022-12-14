@@ -18,7 +18,12 @@ import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 
 export const Home = () => {
   const slider = React.useRef();
-
+  const images = [
+    dinhDocLapImg99,
+    dinhDocLapImg19,
+    dinhDocLapImg17,
+    dinhDocLapImg18,
+  ];
   return (
     <Layout>
       <div className="p-0 m-0">
@@ -30,82 +35,29 @@ export const Home = () => {
             autoplay
             className=""
           >
-            <div className="bg-black relative w-screen">
-              <img
-                className="w-screen h-screen   object-cover object-center opacity-75"
-                src={dinhDocLapImg99}
-                alt="dinhDocLapImg2"
-              />
-              <div className="w-[80%] text-center absolute right-0 left-0 m-auto top-[250px]">
-                <h1 className="text-white text-[48px] font-bold">
-                  Chào mừng Quý khách đến tham quan Dinh Độc Lập
-                </h1>
-                <p className="text-[28px] font-bold text-white troke">
-                  Dinh Độc Lập hay Hội trường Thống Nhất (tên gọi trước đây là
-                  dinh Norodom) là một công trình kiến trúc, tòa nhà ở Thành phố
-                  Hồ Chí Minh. Đây từng là nơi ở và làm việc của Tổng thống Việt
-                  Nam Cộng hòa. Hiện nay, dinh đã được Chính phủ Việt Nam xếp
-                  hạng là di tích quốc gia đặc biệt.
-                </p>
-              </div>
-            </div>
-            <div className="bg-black relative w-screen">
-              <img
-                className="w-screen h-screen  object-cover object-center opacity-75"
-                src={dinhDocLapImg19}
-                alt="dinhDocLapImg2"
-              />
-              <div className="w-[80%] text-center absolute right-0 left-0 m-auto top-[250px]">
-                <h1 className="text-white text-[48px] font-bold">
-                  Chào mừng Quý khách đến tham quan Dinh Độc Lập
-                </h1>
-                <p className="text-[28px] font-bold text-white troke">
-                  Dinh Độc Lập hay Hội trường Thống Nhất (tên gọi trước đây là
-                  dinh Norodom) là một công trình kiến trúc, tòa nhà ở Thành phố
-                  Hồ Chí Minh. Đây từng là nơi ở và làm việc của Tổng thống Việt
-                  Nam Cộng hòa. Hiện nay, dinh đã được Chính phủ Việt Nam xếp
-                  hạng là di tích quốc gia đặc biệt.
-                </p>
-              </div>
-            </div>
-            <div className="bg-black relative w-screen">
-              <img
-                className="w-screen h-screen object-cover object-center opacity-75"
-                src={dinhDocLapImg17}
-                alt="dinhDocLapImg2"
-              />
-              <div className="w-[80%] text-center absolute right-0 left-0 m-auto top-[250px]">
-                <h1 className="text-white text-[48px] font-bold">
-                  Chào mừng Quý khách đến tham quan Dinh Độc Lập
-                </h1>
-                <p className="text-[28px] font-bold text-white troke">
-                  Dinh Độc Lập hay Hội trường Thống Nhất (tên gọi trước đây là
-                  dinh Norodom) là một công trình kiến trúc, tòa nhà ở Thành phố
-                  Hồ Chí Minh. Đây từng là nơi ở và làm việc của Tổng thống Việt
-                  Nam Cộng hòa. Hiện nay, dinh đã được Chính phủ Việt Nam xếp
-                  hạng là di tích quốc gia đặc biệt.
-                </p>
-              </div>
-            </div>
-            <div className="bg-black relative w-screen">
-              <img
-                className="w-screen h-screen  object-cover object-center opacity-75"
-                src={dinhDocLapImg18}
-                alt="dinhDocLapImg2"
-              />
-              <div className="w-[80%] text-center absolute right-0 left-0 m-auto top-[250px]">
-                <h1 className="text-white text-[48px] font-bold">
-                  Chào mừng Quý khách đến tham quan Dinh Độc Lập
-                </h1>
-                <p className="text-[28px] font-bold text-white troke">
-                  Dinh Độc Lập hay Hội trường Thống Nhất (tên gọi trước đây là
-                  dinh Norodom) là một công trình kiến trúc, tòa nhà ở Thành phố
-                  Hồ Chí Minh. Đây từng là nơi ở và làm việc của Tổng thống Việt
-                  Nam Cộng hòa. Hiện nay, dinh đã được Chính phủ Việt Nam xếp
-                  hạng là di tích quốc gia đặc biệt.
-                </p>
-              </div>
-            </div>
+            {images.map((image) => {
+              return (
+                <div className="bg-black relative w-screen">
+                  <img
+                    className="w-screen h-screen   object-cover object-center opacity-75"
+                    src={image}
+                    alt="dinhDocLapImg2"
+                  />
+                  <div className="w-[80%] text-center absolute right-0 left-0 m-auto top-[250px]">
+                    <h1 className="text-white text-[32px] font-bold">
+                      Chào mừng Quý khách đến tham quan Dinh Độc Lập
+                    </h1>
+                    <p className="text-[20px] font-bold text-white troke">
+                      Dinh Độc Lập hay Hội trường Thống Nhất (tên gọi trước đây
+                      là dinh Norodom) là một công trình kiến trúc, tòa nhà ở
+                      Thành phố Hồ Chí Minh. Đây từng là nơi ở và làm việc của
+                      Tổng thống Việt Nam Cộng hòa. Hiện nay, dinh đã được Chính
+                      phủ Việt Nam xếp hạng là di tích quốc gia đặc biệt.
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </Carousel>
           <div className="absolute opacity-50 top-[50%] left-[20px] w-[40px] h-[40px] rounded-full bg-white shadow-sm flex justify-center items-center">
             <LeftOutlined

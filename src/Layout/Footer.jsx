@@ -1,7 +1,9 @@
 import React from "react";
 import { Layout, Row, Col } from "antd";
-
+import logo from "../asset/images/logo.png";
+import { useNavigate } from "react-router-dom";
 export const Footer = () => {
+  const navigate = useNavigate();
   return (
     <Layout.Footer
       className="px-[50px]"
@@ -22,13 +24,54 @@ export const Footer = () => {
           <p className="text-white mt-2 text-[14px] ">Tran Kim Ngan</p>
           <p className="text-white mt-2 text-[14px] ">Le Ngo Quoc Tuan</p>
           <p className="text-white mt-2 text-[14px] ">Hoang Van Hung</p>
+          <img src={logo} alt="logo" className="mt-5 w-3/4" />
         </Col>
         <Col span={6} className="p-[10px] mt-11">
-          <p className="text-white mt-2 font-bold text-[14px] ">Dinh Độc Lập</p>
-          <p className="text-white mt-2 text-[14px] ">Trang chủ</p>
-          <p className="text-white mt-2 text-[14px] ">Bản đồ 3D</p>
-          <p className="text-white mt-2 text-[14px] ">Tham quan</p>
-          <p className="text-white mt-2 text-[14px] ">Liên hệ</p>
+          <p
+            onClick={() => {
+              navigate("/");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="text-white mt-2 font-bold cursor-pointer text-[14px] "
+          >
+            Dinh Độc Lập
+          </p>
+          <p
+            onClick={() => {
+              navigate("/");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="text-white mt-2 cursor-pointer text-[14px] "
+          >
+            Trang chủ
+          </p>
+          <p
+            onClick={() => {
+              navigate("/bando");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="text-white mt-2 cursor-pointer text-[14px] "
+          >
+            Bản đồ 3D
+          </p>
+          <p
+            onClick={() => {
+              navigate("/thamquan");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="text-white mt-2 cursor-pointer text-[14px] "
+          >
+            Tham quan
+          </p>
+          <p
+            onClick={() => {
+              navigate("/lienhe");
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            className="text-white mt-2 cursor-pointer text-[14px] "
+          >
+            Liên hệ
+          </p>
         </Col>
         <Col span={6} className="p-[10px] mt-11">
           <p className="text-white mt-2  text-[14px] ">

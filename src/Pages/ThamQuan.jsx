@@ -18,7 +18,7 @@ export const ThamQuan = () => {
   return (
     <Layout>
       <div className="p-0 m-0">
-        <div className="relative mt-5 overflow-hidden">
+        <div className="relative overflow-hidden">
           <Carousel
             ref={(ref) => {
               slider.current = ref;
@@ -141,7 +141,7 @@ export const ThamQuan = () => {
           />
         </div>
         <div className=" my-10  mx-[50px] flex flex-wrap justify-center">
-          <Button className=" w-[500px] h-[70px] font-bold text-[30px] text-white bg-[#158E89]">
+          <Button className=" w-[500px] h-[70px] font-bold text-[30px] text-white bg-[#1063B8]">
             <Link to={"/bando"}>Xem bản đồ 3D</Link>
           </Button>
         </div>

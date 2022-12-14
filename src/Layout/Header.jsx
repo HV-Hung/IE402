@@ -79,7 +79,7 @@ export const Header = () => {
   return (
     <Layout.Header
       style={{
-        backgroundColor: keyMenu === "" ? "transparent" : "black",
+        backgroundColor: keyMenu === "" ? "transparent" : "rgba(0, 0, 0, 0.7)",
         position: "absolute",
         height: "77px",
         color: "black",
