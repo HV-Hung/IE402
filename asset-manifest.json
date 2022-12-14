@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/IE402/static/css/main.a9e900ed.css",
-    "main.js": "/IE402/static/js/main.b7be79ac.js",
-    "static/media/dinhdoclap1.png": "/IE402/static/media/dinhdoclap1.f5daab0bc19cf652a3b0.png",
+    "main.css": "/IE402/static/css/main.20d0d6db.css",
+    "main.js": "/IE402/static/js/main.70e324cf.js",
+    "static/media/dinhdoclap90.png": "/IE402/static/media/dinhdoclap90.7d3382de837fb986af21.png",
+    "static/media/dinhdoclap99.png": "/IE402/static/media/dinhdoclap99.d8c2e292ebe993db042d.png",
+    "static/media/footer.png": "/IE402/static/media/footer.1607522991ba7da830d4.png",
     "static/media/dinhdoclap2.png": "/IE402/static/media/dinhdoclap2.4b6373f42cea833203f9.png",
     "static/media/dinhdoclap9.png": "/IE402/static/media/dinhdoclap9.a1852af3139a5ba37958.png",
     "static/media/dinhdoclap7.png": "/IE402/static/media/dinhdoclap7.f33d0219c471500c891e.png",
-    "static/media/dinhdoclap14.png": "/IE402/static/media/dinhdoclap14.be34195b0ef28cadeebe.png",
     "static/media/dinhdoclap8.png": "/IE402/static/media/dinhdoclap8.1d996f90ac474fce8dd5.png",
     "static/media/dinhdoclap3.png": "/IE402/static/media/dinhdoclap3.3835dfa7a6e42ce35928.png",
     "static/media/dinhdoclap4.png": "/IE402/static/media/dinhdoclap4.bda4b2a47a642bbcf126.png",
@@ -17,16 +18,18 @@
     "static/media/dinhdoclap13.png": "/IE402/static/media/dinhdoclap13.be08f89f1bf141893f88.png",
     "static/media/dinhdoclap11.png": "/IE402/static/media/dinhdoclap11.640450222fea7e24fff2.png",
     "static/media/dinhdoclap12.png": "/IE402/static/media/dinhdoclap12.f609e9cee46bc4310dd5.png",
+    "static/media/dinhdoclap18.webp": "/IE402/static/media/dinhdoclap18.a2740ba6a685d159c944.webp",
     "static/media/bg-image.png": "/IE402/static/media/bg-image.783ea3a47e21993f86b6.png",
+    "static/media/dinhdoclap19.webp": "/IE402/static/media/dinhdoclap19.1e2b59a84779c48513e6.webp",
     "static/media/dinhdoclap16.jpg": "/IE402/static/media/dinhdoclap16.e14fee6729e32896d5f9.jpg",
     "static/media/dinhdoclap17.jpg": "/IE402/static/media/dinhdoclap17.4bf176e5a06b4690be36.jpg",
     "static/media/lienhe.png": "/IE402/static/media/lienhe.5f08a5a0b0659db087dc.png",
     "index.html": "/IE402/index.html",
-    "main.a9e900ed.css.map": "/IE402/static/css/main.a9e900ed.css.map",
-    "main.b7be79ac.js.map": "/IE402/static/js/main.b7be79ac.js.map"
+    "main.20d0d6db.css.map": "/IE402/static/css/main.20d0d6db.css.map",
+    "main.70e324cf.js.map": "/IE402/static/js/main.70e324cf.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9e900ed.css",
-    "static/js/main.b7be79ac.js"
+    "static/css/main.20d0d6db.css",
+    "static/js/main.70e324cf.js"
   ]
 }
