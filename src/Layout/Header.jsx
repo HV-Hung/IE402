@@ -99,7 +99,6 @@ export const Header = () => {
               <div
                 className={`${keyMenu === item.key ? "border-b-[4px]" : ""}`}
               >
-                {" "}
                 {item.label}
               </div>
             );

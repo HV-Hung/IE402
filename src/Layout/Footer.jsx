@@ -1,9 +1,12 @@
 import React from "react";
 import { Layout, Row, Col } from "antd";
 import logo from "../asset/images/logo.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 export const Footer = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const keyMenu = location.pathname.split("/")[1];
+  if (keyMenu === "bando") return <></>;
   return (
     <Layout.Footer
       className="px-[50px]"
